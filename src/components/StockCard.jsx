@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { stockData } from '../services/constants';
+import { NavLink } from 'react-router-dom'
 import '../styles/StockCard.css'
 
 const StockCard = (props) => {
@@ -24,6 +25,7 @@ const StockCard = (props) => {
        
     <div className="table">
         <h1>{stocks.symbol}</h1>
+        <>
         <table>
                 <tr>
                     <th>COMPANY NAME</th>
@@ -50,6 +52,9 @@ const StockCard = (props) => {
                     <td>{stocks.marketCap}</td>
                 </tr>
         </table>
+        </>
+       
+
     </div>
         
     );
