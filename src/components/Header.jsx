@@ -1,4 +1,4 @@
-
+import '../styles/Header.css'
 import { NavLink } from 'react-router-dom'
 
 const Header = ()=> {
@@ -10,7 +10,7 @@ const Header = ()=> {
                 </NavLink>
 
                 <NavLink to= '/stocks'>
-                    <li>STOCKS</li>
+                    <li>SEARCH STOCKS</li>
                 </NavLink>
 
                 <NavLink to = '/about'>
