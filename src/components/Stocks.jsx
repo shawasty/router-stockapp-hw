@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react';
 import { stockData } from '../services/constants';
 import { NavLink } from 'react-router-dom'
 import React from 'react';
+import '../styles/Stocks.css'
 import NotFound from './NotFound';
-import company from '../docs/company.pdf'
+import Typical from "react-typical";
 
 
 
@@ -32,19 +33,32 @@ const Stocks = (props) => {
 
     return (
         <div className='search-form'>
+            <div className="input">
             <input type="text" placeholder='Enter stock symbol' onChange={(e)=>setSymbol(e.target.value)} />
             <button onClick={(e)=>handlegetStock(e)}>SEARCH</button>
-            
+            </div>
+
             <div className='stockLink'>
                 {/* when an entere value doesn't match, take to 404 page */}
            {     stocks ? 
-            <NavLink to={`/stockdetails/${stocks.symbol}`} style={{textDecorationLine:'none'}}> 
+            <NavLink to={`/stockdetails/${stocks.symbol}`} style={{textDecorationLine:'none'}} className="nav"> 
              <h4 > {stocks.symbol}</h4>
             </NavLink> : <NotFound/> }
             </div>
             
             <div className="list">
-                <a href="company">LIST OF SYMBOLS</a>
+            <div className="typical">
+                <Typical 
+                    loop={Infinity}
+                    steps={[
+                      "Click the back arrow ⬅️ ",
+                      2000,
+                      "After Visiting ⬇️",
+                      2000,
+                    ]}
+                  />
+                <a href="https://gretlcycu.files.wordpress.com/2013/08/quick-ticker-symbol-list.pdf">LIST OF SYMBOLS</a>
+            </div>
             </div>
         </div>
     );

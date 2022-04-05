@@ -4,7 +4,22 @@ ul {
     list-style: none;
     padding: 10px;
     margin-bottom: 20px;
-    font-size: larger;
+    font-size:25px;
     font-weight: bolder;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    font-family:Georgia, 'Times New Roman', Times, serif
+   
+}
+
+.nav {
+    text-decoration-line:none ;
+}
+
+.input {
+    margin: 5%;
+    
+}
+
+.stockLink{
+    text-align: center;
 }

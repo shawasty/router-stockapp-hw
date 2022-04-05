@@ -5,15 +5,15 @@ const Header = ()=> {
     return (
         <div>
             <ul>
-                <NavLink to = '/'>
+                <NavLink to = '/' style={{textDecorationLine:'none'}}>
                     <li>HOME</li>
                 </NavLink>
 
-                <NavLink to= '/stocks'>
+                <NavLink to= '/stocks' style={{textDecorationLine:'none'}}>
                     <li>SEARCH STOCKS</li>
                 </NavLink>
 
-                <NavLink to = '/about'>
+                <NavLink to = '/about' style={{textDecorationLine:'none'}}>
                     <li>ABOUT US</li>
                 </NavLink>
 
