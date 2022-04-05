@@ -53,12 +53,15 @@ const Stocks = (props) => {
                     steps={[
                       "Click the back arrow ⬅️ ",
                       2000,
-                      "After Visiting ⬇️",
+                      "After Visiting Link Below ⬇️",
                       2000,
                     ]}
                   />
                 <a href="https://gretlcycu.files.wordpress.com/2013/08/quick-ticker-symbol-list.pdf">LIST OF SYMBOLS</a>
             </div>
+            </div>
+            <div className="dog">
+                <img src="https://i.gifer.com/Qsmo.gif" alt="" />
             </div>
         </div>
     );

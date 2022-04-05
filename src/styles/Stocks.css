@@ -1,9 +1,13 @@
+.search-form{
+    height: 100vh;
+}
+
 
 .stockLink{
     display: flex;
     justify-content: center;
    align-items: center;
-   margin: 5%;
+   /* margin: 5%; */
     /* margin-left: 20%; */
 }
 .input {
@@ -34,4 +38,15 @@ button{
 
 button:hover {
     background-color:rgb(234	154	139)	;
+  }
+  
+  .dog{
+      display: flex;
+      justify-content: end;
+  }
+  img{
+      width: 12%;
+      height: 10%;
+      margin-right: 10%;
+      border-radius: 30%;
   }

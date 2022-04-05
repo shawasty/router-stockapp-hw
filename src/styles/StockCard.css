@@ -1,0 +1,33 @@
+
+.table{
+    margin-top: 5%;
+}
+table{
+    margin-left: 15%;
+   width: 70%;
+   /* border-spacing: 0px; */
+   border : 1px solid #f0cbcb
+}
+
+th{
+    text-align: left;
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+td{
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 8px;
+    color: red;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+h1{
+    color: rgb(230, 20, 20);
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
