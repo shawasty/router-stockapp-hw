@@ -7,6 +7,9 @@ import { NavLink } from 'react-router-dom'
 const Home = () => {
     return (
         <div className='welcome'>
+            <div className="dog">
+                <img src="https://i.gifer.com/Qsmo.gif" alt="" />
+        </div>
             <h1>Welcome To Godbless' Stock's Site </h1>
             
         <div className="typical">
@@ -14,15 +17,16 @@ const Home = () => {
                     loop={Infinity}
                     steps={[
                       "Search all about company stocks 📉 🌎 ",
-                      1000,
+                      2000,
                       "All in one place 💻 ",
-                      1000,
+                      2000,
                     ]}
                   />
         </div>
-        
+
          <h4>Click <span><NavLink to= '/stocks'>HERE</NavLink></span> To Enjoy ☺️</h4>
-                 
+
+        
                 
         </div>
     );
